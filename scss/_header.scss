@@ -1,0 +1,31 @@
+header{
+    h1, h2{
+        font-family: 'Bungee Shade', cursive;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+.header{
+    display: grid;
+    place-items: center;
+    &__titular{
+        color: $rojo;
+        text-align: center;
+    }
+    &__lista{
+        display: flex;
+        .lista__item{
+            color: white;
+            padding: 1rem;
+            border: solid white 2px;
+            margin: 0,5rem;
+            &:hover{
+                background-color: $azul;
+                color: black;
+                border-radius: 5px;
+            }
+        }
+    }
+}
